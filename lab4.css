@@ -1,0 +1,71 @@
+.task{
+    opacity: 0.6;
+    margin-top: 5%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.todoList{
+  font-family: 'Cabin', sans-serif;
+  margin: 20px auto;
+  border-style: solid;
+  width: 60%;
+  text-align: center;
+}
+
+.completedList{
+  margin: 20px auto;
+  border-style: solid;
+  width: 60%;
+  text-align: center;
+}
+
+.structure{
+  text-align: center;
+  margin: 0 auto;
+}
+
+button{
+  display: block;
+  font-size: 20px;
+}
+
+#dropBox{
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  width: 30%;
+  height: 200px;
+  border: 6px dashed #999;
+  margin: 0 auto;
+  padding: 20 20 20 20;
+  display: block;
+  background-color: #e7e8b0;
+  color: black;
+  text-align: center;
+}
+
+
+h1{
+  size: 40px;
+}
+
+input{
+  margin:20px;
+  font-size: 50px;
+  border-radius: 1em;
+  border: none;
+  text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+body{
+  background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}

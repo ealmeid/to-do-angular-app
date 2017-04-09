@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+  <title>CPS630 - Lab 4</title>
+  <link rel="stylesheet" type="text/css" href="lab4.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="todoScript.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body ng-app="ToDoApp" ng-controller="ToDoController" id="retrieveToDos">
+
+<div class="task">
+  <form ng-submit="addTask()">
+    <h1>
+      TODO LIST
+    </h1>
+    <div id="dropBox">
+      <div>Drop JSON File With Tasks Here</div>
+    </div>
+      <input type="text" ng-model="task" placeholder="Add a Task...">
+      <input type="text" ng-model="description" placeholder="Add a Description..."><br>
+      <input type="submit" name="Submit" value="Add Tasks!"><br>
+  </form>
+  <form ng-submit="addJSONTasks()">
+    <input type="submit" name="Submit" value="Add JSON Tasks!"><br>
+  </form>
+</div>
+
+<div class="todoList">
+  <h1>To-Do</h1>
+    <div ng-include="'taskStructure.html'"></div>
+  <button ng-click="completeTask()">Clear Complete Tasks</button>
+</div>
+
+<div class="completedList">
+  <h1>Completed</h1>
+    <div ng-include="'completedTaskStructure.html'"></div>
+  <button ng-click="clearCompleteTasks()">Clear Complete Tasks</button>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+<table style="margin: 15px auto;" >
+<tr style="border-style: solid; margin: 20px auto; text-align: center; background-color:rgba(255, 255, 255, 0.2);" ng-repeat="x in ToDoList track by $index">
+<td><input type="checkbox" style="zoom:2" ng-model="x.complete"/></td>
+<td><b>{{ x.task }}</b><br><br>{{ x.description }}</td>
+</tr>
+</table>
